@@ -27,11 +27,11 @@ const InfoCardsSection = () => {
 
   return (
     <section className="relative py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 overflow-hidden">
-      <div className="absolute inset-0 z-0 -top-10 -bottom-60">
+      <div className="absolute inset-0 z-0">
         <img 
           src="https://experiencia.winterhalter.com/cl/wp-content/uploads/2024/02/2-1.webp" 
           alt="Persona trabajando en cocina industrial" 
-          className="w-full h-full object-contain opacity-20 object-bottom"
+          className="w-full h-full object-cover opacity-15 sm:opacity-20"
         />
       </div>
       

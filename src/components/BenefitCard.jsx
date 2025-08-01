@@ -29,8 +29,7 @@ const BenefitCard = ({ title, description, metric, metricDescription }) => {
         {/* Efecto de brillo en hover */}
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         
-        {/* Línea decorativa bajo el título - Ajustada para no tapar texto */}
-        <div className="absolute top-20 left-8 w-12 h-0.5 bg-gradient-to-r from-[#009FE3] to-[#00B0F0] group-hover:w-16 transition-all duration-300"></div>
+
       </div>
       
       {/* Flecha - Visible en todas las versiones */}
