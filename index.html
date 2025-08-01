@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script>
+      // Detectar si es para Figma mobile
+      if (window.location.search.includes('mobile=true')) {
+        // Forzar viewport mobile
+        const meta = document.querySelector('meta[name="viewport"]');
+        meta.content = 'width=375, initial-scale=1, user-scalable=no';
+        
+        // Forzar ancho mobile y centrar
+        document.body.style.width = '375px';
+        document.body.style.margin = '0 auto';
+        document.body.style.maxWidth = '375px';
+        document.body.style.overflowX = 'hidden';
+        
+        // Agregar clase para estilos específicos
+        document.documentElement.classList.add('figma-mobile');
+        
+        // Forzar altura mínima para mobile
+        document.body.style.minHeight = '100vh';
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
